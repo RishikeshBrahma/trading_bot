@@ -4,11 +4,11 @@ from binance.client import Client
 from binance.exceptions import BinanceAPIException
 from bot.logging_config import setup_logger
 
-# Initialize logger
+
 logger = setup_logger()
 
 def get_binance_client():
-    # Load environment variables from the .env file
+    
     load_dotenv()
     
     api_key = os.getenv('BINANCE_TESTNET_API_KEY')
